@@ -5,3 +5,9 @@
 <h3><%= shelter.name %></h3>
 <p>Created at: <%= shelter.created_at %></p>
 <% end %>
+
+
+<h1>Shelters with Pending Applications:</h1>
+<% @pending_shelters.each do |shelter| %>
+<p>Name: <%= shelter.name %> </p>
+<% end %>
